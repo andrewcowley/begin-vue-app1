@@ -1,12 +1,12 @@
-let data = require('@begin/data')
-
-exports.handler = async function http() {
-
-    let table = 'greetings'
-    let greetings = [
-      { table, key: 'Māori', greeting: `Kia ora` },
-      { table, key: 'Swahili', greeting: `Hujambo` },
-      { table, key: 'Japanese', greeting: `Kon'nichiwa` } ]
-    await data.set(greetings)
-  
+exports.handler = async function http (req) {
+  console.log('Begin API called')
+  return {
+    headers: {
+      'content-type': 'application/json; charset=utf8',
+      'cache-control': 'no-cache, no-store, must-revalidate, max-age=0, s-maxage=0'
+    },
+    body: JSON.stringify({
+      message: 'Hello from your Begin API!'
+    })
+  }
 }
