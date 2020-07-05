@@ -6,8 +6,8 @@ folder dist
 
 @http
 get /api
-get /inc
 post /inc
+post /pulse
 
 @tables
 data

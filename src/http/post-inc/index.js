@@ -1,6 +1,12 @@
+let arc = require('@architect/functions')
 let data = require('@begin/data')
 
-exports.handler = async function http (req) {
-  let table = `count`
-  await data.set({table, 'key':0})
+exports.handler = async function post (req) {
+  await data.set({
+    table: 'inc',
+    value: 0,
+  })
+  return {
+    statusCode: 200
+  }
 }
