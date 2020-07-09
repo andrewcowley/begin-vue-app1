@@ -8,6 +8,7 @@ folder dist
 get /api
 post /inc
 post /pulse
+get /pulse
 
 @tables
 data
