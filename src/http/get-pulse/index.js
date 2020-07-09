@@ -1,4 +1,4 @@
-let data = require('@begin/data')
+// let data = require('@begin/data')
 
 // exports.handler = async function http (req) {
 //   let table = 'inc';
