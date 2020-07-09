@@ -1,10 +1,8 @@
 let data = require('@begin/data')
 
-exports.handler = async function post (req) {
- 
+exports.handler = async function get (req) {
   let table = 'inc';
   let key = 'pulses';
-
   let doc = await data.get({table, key})
   return {
     statusCode: 201,
