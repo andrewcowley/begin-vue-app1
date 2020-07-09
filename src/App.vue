@@ -23,14 +23,14 @@ export default {
       try {
         let data = await (await fetch('api')).json()
         this.message = data.message
-        await this.sleep();
-        this.getData();
+        await this.sleep()
+        this.getData()
       } catch (err) {
         this.message = err.message
       }
     },
     sleep: async function () {
-      await new Promise(r => setTimeout(r, 2000));
+      await new Promise(r => setTimeout(r, 2000))
     }
   },
   mounted: function () {
