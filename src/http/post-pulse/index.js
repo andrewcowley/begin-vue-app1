@@ -3,7 +3,7 @@ let data = require('@begin/data')
 exports.handler = async function post (req) {
  
   let table = 'inc';
-  let key = 'the_value';
+  let key = 'pulses';
 
   await data.incr({table, key, prop: 'pulses'})
   return {
