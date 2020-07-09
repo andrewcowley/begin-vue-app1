@@ -1,6 +1,6 @@
 let data = require('@begin/data')
 
-exports.handler = async function get (req) {
+exports.handler = async function http (req) {
   let table = 'inc';
   let key = 'pulses';
   let doc = await data.get({table, key})
