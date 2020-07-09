@@ -1,11 +1,10 @@
 let data = require('@begin/data')
 
 exports.handler = async function post (req) {
-  await data.set({
-    table: 'inc',
-    key: 'pulses',
-    value: 0,
-  })
+  let table= 'inc';
+  let key= 'pulses';
+  let value= 0;
+  await data.set({table, key, value})
   return {
     statusCode: 200
   }
