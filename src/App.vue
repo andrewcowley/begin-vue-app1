@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <HelloWorld :message="message[0].noPulses"/>
+    <HelloWorld :message="message[1].noPulses"/>
   </div>
 </template>
 
