@@ -23,6 +23,8 @@ export default {
       try {
         let data = await (await fetch('pulse')).json()
         this.message = data.message
+        await sleep()
+        this.getData()
       } catch (err) {
         this.message = err.message
       }
