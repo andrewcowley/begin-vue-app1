@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <HelloWorld :message="message[1].noPulses"/>
-    <button @click="getData"></button>
+    <button @click="getData">Get data</button>
   </div>
 </template>
 
