@@ -16,7 +16,7 @@ let data = require('@begin/data')
 //   }
 // }
 exports.handler = async function http (req) {
-  console.log('Begin API called')
+  console.log('Pulse GET called')
   let table = await data.get({
     table: 'inc'
   })

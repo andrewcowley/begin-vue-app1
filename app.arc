@@ -6,7 +6,6 @@ folder dist
 
 @http
 get /api
-post /inc
 post /pulse
 get /pulse
 

@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld :message="message"/>
+    <HelloWorld :message="message[0].noPulses"/>
   </div>
 </template>
 
@@ -21,7 +20,7 @@ export default {
   methods:  {
     getData: async function () {
       try {
-        let data = await (await fetch('api')).json()
+        let data = await (await fetch('pulse')).json()
         this.message = data.message
         await this.sleep()
         this.getData()
